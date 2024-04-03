@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  font-size: 62.5%;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  height: 10vh; }
+
+main section#gameSection {
+  width: 32vw; }
+  main section#gameSection div#inputsContainer {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 1rem; }
+    main section#gameSection div#inputsContainer div#pokeGeneration div label,
+    main section#gameSection div#inputsContainer div#pokeGeneration div span,
+    main section#gameSection div#inputsContainer div#pokeType1 div label,
+    main section#gameSection div#inputsContainer div#pokeType1 div span,
+    main section#gameSection div#inputsContainer div#pokeType2 div label,
+    main section#gameSection div#inputsContainer div#pokeType2 div span,
+    main section#gameSection div#inputsContainer div#pokeName div label,
+    main section#gameSection div#inputsContainer div#pokeName div span,
+    main section#gameSection div#inputsContainer div#pokeId div label,
+    main section#gameSection div#inputsContainer div#pokeId div span {
+      font-size: 1.6rem; }
+    main section#gameSection div#inputsContainer div#pokeGeneration input,
+    main section#gameSection div#inputsContainer div#pokeType1 input,
+    main section#gameSection div#inputsContainer div#pokeType2 input,
+    main section#gameSection div#inputsContainer div#pokeName input,
+    main section#gameSection div#inputsContainer div#pokeId input {
+      height: auto; }
+    main section#gameSection div#inputsContainer div#pokeGeneration select,
+    main section#gameSection div#inputsContainer div#pokeType1 select,
+    main section#gameSection div#inputsContainer div#pokeType2 select,
+    main section#gameSection div#inputsContainer div#pokeName select,
+    main section#gameSection div#inputsContainer div#pokeId select {
+      height: auto; }
+      main section#gameSection div#inputsContainer div#pokeGeneration select option,
+      main section#gameSection div#inputsContainer div#pokeType1 select option,
+      main section#gameSection div#inputsContainer div#pokeType2 select option,
+      main section#gameSection div#inputsContainer div#pokeName select option,
+      main section#gameSection div#inputsContainer div#pokeId select option {
+        font-family: "Playfair Display", serif; }
+    main section#gameSection div#inputsContainer div#buttonContainer button {
+      margin-right: 0.5rem;
+      font-weight: bold;
+      font-size: 1.4rem; }
+    main section#gameSection div#inputsContainer input,
+    main section#gameSection div#inputsContainer select,
+    main section#gameSection div#inputsContainer label,
+    main section#gameSection div#inputsContainer option,
+    main section#gameSection div#inputsContainer button {
+      border-radius: 0.5rem;
+      font-size: 1.6rem; }
+    main section#gameSection div#inputsContainer img {
+      margin-bottom: 0.759rem; }
+    main section#gameSection div#inputsContainer span,
+    main section#gameSection div#inputsContainer label {
+      background-color: #131313;
+      letter-spacing: 0.1rem;
+      color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#cbdfbd" />
+    <meta
+      name="description"
+      content="Jogo que testará o conhecimento sobre pokemons."
+    />
+    <meta name="keywords" content="pokemon" />
+    <meta name="language" content="Português" />
+    <meta name="author" content="Vitor Correa" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Vitor Correa Rosa" />
+    <meta
+      property="og:description"
+      content="Jogo que testará o conhecimento sobre pokemons."
+    />
+    <meta property="og:image" content="URL_DA_IMAGEM" />
+    <meta property="og:url" content="vitorcorrearosa.tech" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./../src/css/style.css" />
+
+    <title>KPG</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main class="container">
+      <section id="gameSection">
+        <div id="inputsContainer">
+          <div
+            id="imgContainer"
+            class="container d-flex justify-content-center align-items-center"
+          >
+            <img
+              alt="pokemon"
+              id="defaut"
+              class="img-fluid"
+              src="../src/images/pokeball.png"
+            />
+          </div>
+
+          <div id="pokeName" class="container input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm"
+                >Nome:</span
+              >
+            </div>
+
+            <input
+              id="pokeName"
+              type="text"
+              class="form-control"
+              aria-label="Escreva o nome do pokemon..."
+            />
+          </div>
+
+          <div id="pokeId" class="container input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm"
+                >Id:</span
+              >
+            </div>
+
+            <input
+              id="pokeId"
+              type="number"
+              class="form-control"
+              aria-label="Escreva o id do pokemon..."
+              min="1"
+              max="1025"
+            />
+          </div>
+
+          <div id="pokeGeneration" class="container input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Geração</label
+              >
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Escolher...</option>
+              <option value="1">1ª</option>
+              <option value="2">2ª</option>
+              <option value="3">3ª</option>
+              <option value="4">4ª</option>
+              <option value="5">5ª</option>
+              <option value="6">6ª</option>
+              <option value="7">7ª</option>
+              <option value="8">8ª</option>
+              <option value="9">9ª</option>
+            </select>
+          </div>
+
+          <div id="pokeType1" class="container input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Tipo 1:</label
+              >
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Escolher...</option>
+              <option class="fire" id="normalType" value="normal">
+                Normal
+              </option>
+              <option id="fireType" value="fire">Fire</option>
+              <option id="waterType" value="water">Water</option>
+              <option id="electricType" value="electric">Electric</option>
+              <option id="grassType" value="grass">Grass</option>
+              <option id="iceType" value="ice">Ice</option>
+              <option id="fightingType" value="fighting">Fighting</option>
+              <option id="poisonType" value="poison">Poison</option>
+              <option id="groundType" value="ground">Ground</option>
+              <option id="flyingType" value="flying">Flying</option>
+              <option id="psychicType" value="psychic">Psychic</option>
+              <option id="bugType" value="bug">Bug</option>
+              <option id="rockType" value="rock">Rock</option>
+              <option id="ghostType" value="ghost">Ghost</option>
+              <option id="dragonType" value="dragon">Dragon</option>
+              <option id="darkType" value="dark">Dark</option>
+              <option id="steelType" value="steel">Steel</option>
+              <option id="fairyType" value="fairy">Fairy</option>
+            </select>
+          </div>
+
+          <div id="pokeType2" class="container input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Tipo 2:</label
+              >
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Escolher...</option>
+              <option id="normalType" value="normal">Normal</option>
+              <option id="fireType" value="fire">Fire</option>
+              <option id="waterType" value="water">Water</option>
+              <option id="electricType" value="electric">Electric</option>
+              <option id="grassType" value="grass">Grass</option>
+              <option id="iceType" value="ice">Ice</option>
+              <option id="fightingType" value="fighting">Fighting</option>
+              <option id="poisonType" value="poison">Poison</option>
+              <option id="groundType" value="ground">Ground</option>
+              <option id="flyingType" value="flying">Flying</option>
+              <option id="psychicType" value="psychic">Psychic</option>
+              <option id="bugType" value="bug">Bug</option>
+              <option id="rockType" value="rock">Rock</option>
+              <option id="ghostType" value="ghost">Ghost</option>
+              <option id="dragonType" value="dragon">Dragon</option>
+              <option id="darkType" value="dark">Dark</option>
+              <option id="steelType" value="steel">Steel</option>
+              <option id="fairyType" value="fairy">Fairy</option>
+            </select>
+          </div>
+
+          <div
+            id="buttonContainer"
+            class="btn-toolbar container d-flex justify-content-center align-items-center"
+            role="toolbar"
+            aria-label="Toolbar com grupos de botões"
+          >
+            <button type="button" class="btn btn-dark" id="generatePokemon">
+              Gerar Pokemon
+            </button>
+
+            <button type="button" class="ml-center btn btn-dark">Enviar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <fotter></fotter>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+//imports
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+// color palette
+$pastelGray: #cbdfbd;
+$gainsboro: #dbdbdb;
+$springBud: #d4e09b;
+$goldenrodYellow: #f6f4d2;
+$darkSalmon: #f19c79;
+$mediumCarmine: #a44a3f;
+$chineseBlack: #131313;
+
+//font familly
+$titillumWeb: "Titillium Web", sans-serif;
+$poppins: "Poppins", sans-serif;
+$monstserrat: "Montserrat", sans-serif;
+$playfairDisplay: "Playfair Display", serif;
+
+//font size
+$smallSize: 1.4rem;
+$standardSize: 1.6rem;
+$mediumSize: 1.8rem;
+$bigSize: 2rem;
+$titleSize: 2.4rem;
+
+//mixins
+@mixin fontEdit($size) {
+  font: {
+    size: $size;
+  }
+}
+
+// global configs
+* {
+  @include fontEdit(62.5%);
+
+  font: {
+    family: $playfairDisplay;
+  }
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 10vh;
+}
+
+main {
+  section#gameSection {
+    width: 32vw;
+
+    div#inputsContainer {
+      background: {
+        color: #f5f5f5;
+      }
+
+      padding: 1rem;
+
+      border: {
+        radius: 1rem;
+      }
+
+      div#pokeGeneration,
+      div#pokeType1,
+      div#pokeType2,
+      div#pokeName,
+      div#pokeId {
+        div {
+          label,
+          span {
+            @include fontEdit($standardSize);
+          }
+        }
+
+        input {
+          height: auto;
+        }
+
+        select {
+          height: auto;
+
+          option {
+            font: {
+              family: $playfairDisplay;
+            }
+          }
+        }
+      }
+
+      div#buttonContainer {
+        button {
+          margin: {
+            right: 0.5rem;
+          }
+
+          font: {
+            weight: bold;
+            size: $smallSize;
+          }
+        }
+      }
+
+      input,
+      select,
+      label,
+      option,
+      button {
+        border: {
+          radius: 0.5rem;
+        }
+
+        @include fontEdit($standardSize);
+      }
+
+      img {
+        margin: {
+          bottom: 0.759rem;
+        }
+      }
+
+      span,
+      label {
+        background: {
+          color: $chineseBlack;
+        }
+
+        letter-spacing: 0.1rem;
+
+        color: #fff;
+      }
+    }
+  }
+}
+
+//footer{}
